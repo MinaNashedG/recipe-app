@@ -42,14 +42,33 @@ How To Run
 ----------
 `./mvnw spring-boot:run`
 
-How To Test
+Test Coverage
 ----------
 
-**I have implemented around 80 unit and integration test cases that cover as much as cases
-to be production ready.**
+the source code is covered by integration and unit tests under `src\test\java`
+
+I have implemented around 80 unit and integration test cases that cover as much as cases
+to be production ready.
+
+Sample Request for recipe search
+-------
+`curl -X 'POST' \'http://localhost:8090/api/v1/recipes/search?page=0&size=10&sortBy=name' \
+-H 'Content-Type: application/json' \
+-d` 
+```JSON'{
+"criteria": [
+{
+"filterKey": "name",
+"value": "Pasta",
+"operation": "CN"
+}
+],
+"dataOption": "ALL"
+}
+````
 
 
-Response
+Sample Response
 -------
 ```json
 [
