@@ -4,20 +4,20 @@ The solution uses Microservices architecture for building the Recipe App !
 
 The implementation consists of one microservice 'recipe-app' implemented in Java 17 and Spring Boot 3 :
 
-- `Ingredients API`: Ingredients API with Four endpoints:
+- `Ingredients API`: Ingredients API with below endpoints:
 
     - `POST /api/v1/ingredients Endpoint`: To create a new ingredient.
     - `GET /api/v1/ingredients?page=0&size=10 Endpoint`: To list All ingredients.
     - `DELETE /api/v1/ingredients/{id} Endpoint`: To delete an ingredient.
-    - `GET  /api/v1/ingredients/{id}`: To retrieve an ingredient by Given Id.
+    - `GET  /api/v1/ingredients/{id}`: To retrieve an ingredient by ID.
   
     
-- `Recipes API`: Recipe API with Six endpoints:
+- `Recipes API`: Recipe API with below endpoints:
 
   - `POST /api/v1/recipes Endpoint`: To create a new recipe.
   - `GET /api/v1/recipes?page=0&size=10 Endpoint`: To list All recipes.
   - `DELETE /api/v1/recipes/{id} Endpoint`: To delete an recipe.
-  - `GET  /api/v1/recipes/{id}`: To retrieve a recipe by given ID.
+  - `GET  /api/v1/recipes/{id}`: To retrieve a recipe by ID.
   - `PATCH  /api/v1/recipes`: To update an existing recipe .
   - `POST  /api/v1/recipes/search?page=0&size=10&sortBy=name`: To search for recipes.
 
@@ -44,8 +44,9 @@ How To Run
 
 How To Test
 ----------
+
 **I have implemented around 80 unit and integration test cases that cover as much as cases
-within Recipe App to be production ready.**
+to be production ready.**
 
 
 Response
